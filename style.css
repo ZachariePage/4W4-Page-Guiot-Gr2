@@ -17,8 +17,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 
 body{
-    background-color: beige;
+    background-color: pink;
 }
 h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
 }

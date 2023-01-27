@@ -1,10 +1,22 @@
-<?php
+<?php 
 /**
- * 
- * modele par defaut
+ * Modèle par défaut
  * 
  */
 ?>
-<?php get_header();?>
-<h1>bienvenue</h1>
+<?php get_header(); ?>
+<main>
+    <?php 
+        if(have_posts()) : 
+            while(have_posts()) : the_post();
+            the_title('<h1>',' ! ! !', '</h1>');
+            the_content(); ?>
+            <hr>
+            <?php
+        endwhile;
+    endif;
+
+
+    ?>
+</main>
 <?php get_footer(); ?>
