@@ -8,6 +8,6 @@
 </head>
 <?php wp_head(); ?>
 <body>
-    <header>
-        <h1>4W4-Création et développement Web</h1>
+    <header><h2><?php echo bloginfo('description') ?>-</h2>
+       <h1> <a href="<?php echo bloginfo('url') ?>"><?php echo bloginfo('name') ?></a></h1>
     </header>

@@ -23,3 +23,4 @@ vers la branche main
 - git checkout lab2
 - git push 4w4 lab2
 - git push 4w4 lab2 (pousse la branche active lab2 vers 4w4 dans la brance lab2)
+- git remote -v (check the alias)
