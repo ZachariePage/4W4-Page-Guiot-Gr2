@@ -388,6 +388,10 @@ body {
   min-width: 100%;
 }
 
+.contentSingle {
+  color: green;
+}
+
 a {
   color: #888;
 }
