@@ -322,7 +322,7 @@ template {
 
 /* --------------------------------------------- base */
 h1 {
-  font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
+  font-size: clamp(2rem, 1.5192rem + 1.5385vw, 3.25rem);
 }
 
 h2 {
@@ -367,6 +367,20 @@ h6 {
 
 p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+/* front page */
+.headerSite {
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.post_title {
+  background-color: grey;
+  padding: 20px;
 }
 
 a {
