@@ -8,6 +8,8 @@
 </head>
 <?php wp_head(); ?>
 <body>
-    <header><h2><?php echo bloginfo('description') ?>-</h2>
+    <header>
+        <?php wp_nav_menu(array("menu" => "entete" )) ?> 
+    <h2><?php echo bloginfo('description') ?>-</h2>
        <h1> <a href="<?php echo bloginfo('url') ?>"><?php echo bloginfo('name') ?></a></h1>
     </header>
