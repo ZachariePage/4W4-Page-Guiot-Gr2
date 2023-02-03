@@ -1,0 +1,15 @@
+.site_footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /*&section{
+        border : 1px;
+        flex: 1 1 200px; //pas plus grand que 200px;
+        border: 1px solid black;
+    }*/
+}
+.site_footer section{
+    border : 1px;
+        flex: 1 1 200px; //pas plus grand que 200px;
+        border: 1px solid black;
+}

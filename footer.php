@@ -1,5 +1,9 @@
-<footer>
-    <h3>pied de page</h3>
+<footer class="site_footer">
+
+<section>colonne</section>
+<section>colonne</section>
+<section>colonne</section>
+
 </footer>
 <?php wp_footer();?>
 </body>
