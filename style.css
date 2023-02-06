@@ -427,4 +427,16 @@ a:hover {
   flex: 1 1 200px;
   border: 1px solid black;
   justify-content: space-evenly;
+}
+
+.menu-entete-container .menu {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+.menu-entete-container .menu .menu-item {
+  color: rgb(0, 42, 85);
+}
+.menu-entete-container .menu .menu-item a {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
