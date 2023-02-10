@@ -1,4 +1,4 @@
-<footer class="site_footer">
+<footer class="sitefooter">
 
 <section>colonne</section>
 <section>colonne</section>

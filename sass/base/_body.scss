@@ -1,7 +1,14 @@
+
 body {
     max-width: 100%;
     min-width: 100%;
+    background-color: beige;
 }
+//frontpage
+.post_title {
+    background-color: grey;
+    padding: 20px;
+  }
 
 //single
 .contentSingle{
@@ -9,4 +16,8 @@ body {
 }
 .titleSingle{
     
+}
+.first{
+    background-color: darkblue;
+    margin-bottom: 0; 
 }

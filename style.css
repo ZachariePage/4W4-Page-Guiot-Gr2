@@ -374,8 +374,16 @@ p {
   background-color: grey;
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
-  padding-left: 20px;
+}
+
+.desc {
+  margin-top: 7rem;
+}
+
+body {
+  max-width: 100%;
+  min-width: 100%;
+  background-color: beige;
 }
 
 .post_title {
@@ -383,13 +391,13 @@ p {
   padding: 20px;
 }
 
-body {
-  max-width: 100%;
-  min-width: 100%;
-}
-
 .contentSingle {
   color: green;
+}
+
+.first {
+  background-color: darkblue;
+  margin-bottom: 0;
 }
 
 a {
@@ -403,40 +411,43 @@ a:hover {
 }
 
 /* --------------------------------------------- composant */
-.site_footer {
-  height: 10%;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
+.sitefooter {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  /*&section{
-      border : 1px;
-      flex: 1 1 200px; //pas plus grand que 200px;
-      border: 1px solid black;
-  }*/
-  background-color: black;
-  flex-grow: 1;
-  color: white;
 }
 
-.site_footer section {
-  display: flex;
-  border: 1px;
+.sitefooter section {
   flex: 1 1 200px;
-  border: 1px solid black;
-  justify-content: space-evenly;
+  height: 10vh;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: bolder;
+  padding-top: 1em;
+  text-decoration: underline;
+}
+
+.titre_header_logomenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: grey;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 .menu-entete-container .menu {
   display: flex;
   list-style: none;
-  justify-content: space-around;
+  justify-content: flex-end;
 }
 .menu-entete-container .menu .menu-item {
   color: rgb(0, 42, 85);
 }
 .menu-entete-container .menu .menu-item a {
   display: block;
+  padding: 5px 20px;
 }/*# sourceMappingURL=style.css.map */
