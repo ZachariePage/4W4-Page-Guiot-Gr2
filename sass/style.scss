@@ -13,7 +13,7 @@ Text Domain: 4W4-Zacharie
 
 @import "variables/dimension";
 @import "normalize/normalize";
-// @import "normalize/box-sizing";
+@import "normalize/box-sizing";
 
 /* --------------------------------------------- base */
 @import "base/heading";

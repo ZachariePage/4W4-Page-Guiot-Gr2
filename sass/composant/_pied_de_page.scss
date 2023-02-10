@@ -3,7 +3,9 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
+    bottom: 0;
+    top: 100%;
+    width: 100%;
 }
 
 .sitefooter section{

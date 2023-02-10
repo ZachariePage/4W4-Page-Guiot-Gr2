@@ -5,7 +5,8 @@
  */
 ?>
 <?php get_header(); ?>
-<main>
+<main class="single">
+<h2 class="desc"><?php echo bloginfo('description') ?>-</h2>
 
     <?php 
         if(have_posts()) : 

@@ -1,12 +1,16 @@
 .site__header{}
 .titre_header_logomenu{
+    padding-left: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: grey;
     position: fixed;
-    width: 100%;
-    top: 0;
+    width: 99vw;
+    top: 32px;
+}
+.titre_header_h1{
+    padding-right: 25px;
 }
 
 .menu-entete-container {//nav
