@@ -420,8 +420,19 @@ body {
   box-sizing: border-box;
 }
 
+.blocflex {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem;
+}
+.blocflex article {
+  border: 1px solid #aaa;
+  padding: 1rem;
+}
+
 a {
-  color: #888;
+  color: #00f2ff;
 }
 a:visited {
   color: rgb(255, 0, 183);
@@ -431,6 +442,17 @@ a:hover {
 }
 
 /* --------------------------------------------- composant */
+.blockflex {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem;
+}
+.blockflex article {
+  border: 1px solid #aaa;
+  padding: 1rem;
+}
+
 .sitefooter {
   display: flex;
   justify-content: space-between;
