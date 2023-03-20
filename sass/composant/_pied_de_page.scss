@@ -17,5 +17,24 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bolder;
     padding-top: 1em;
-    text-decoration: underline;
+}
+
+#menuFooter{
+    ul{
+        list-style: none;
+        text-decoration: none;
+    }
+    li{
+        margin-top: 5px;
+    }
+    a {
+        color: white;
+        &visited{
+            color: lightcyan;
+        }
+        &:hover{
+            color: lightblue;
+        }
+    }
+
 }

@@ -18,17 +18,27 @@
     grid-area: footer;
   }
   .site__aside {
+    text-align: center;
+    @media screen and (min-width: $largeur__bureau) {
+      text-align: left;
+  }
     grid-area: aside;
     background-color: lightblue;
     a{
-      background-color: lightblue;
       padding: 10px;
       margin-top: 20px;
-      border-radius: 30%;
-      font-size: clamp(0.5rem, 0.1429rem + 1.1429vw, 1rem);
+      font-size: clamp(0.9375rem, 0.4911rem + 1.4286vw, 1.5625rem);
+      color: black;
+        &visited{
+            color: rgb(148, 148, 255);
+        }
+        &:hover{
+            color: rgb(255, 255, 255);
+        }
     }
     li{
       margin-top: 2rem;
+      list-style: none;
     }
     li:hover{
       transform: scale(120%);
@@ -40,7 +50,7 @@
       background-color: rgb(300, 300, 300);
       background: transparent;
       background-size: cover;
-      background-image: url("https://previews.123rf.com/images/vectorstockcompany/vectorstockcompany1808/vectorstockcompany180817489/108634343-rabbit-vector-icon-isolated-on-transparent-background-rabbit-logo-concept.jpg");
+      background-image: url("https://i.pinimg.com/474x/58/0f/5e/580f5eb62ff7e932047da0709dfb1af4--funny-rabbit-bunny-logo.jpg");
     }
     .lapinMenus{
       width: 100px;
