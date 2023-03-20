@@ -1,0 +1,89 @@
+/**
+*  Mise en page général avec display:grid
+*/
+
+.site__header {
+    grid-area: header;
+    padding: 1rem clamp(1rem, 3vw, 20rem);
+    background-color: white;
+    border-bottom: 2px solid black;
+  }
+  
+  .site__main {
+    grid-area: main;
+    overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+  }
+  
+  .site__footer {
+    grid-area: footer;
+  }
+  .site__aside {
+    grid-area: aside;
+    background-color: lightblue;
+    a{
+      background-color: lightblue;
+      padding: 10px;
+      margin-top: 20px;
+      border-radius: 30%;
+      font-size: clamp(0.5rem, 0.1429rem + 1.1429vw, 1rem);
+    }
+    li{
+      margin-top: 2rem;
+    }
+    li:hover{
+      transform: scale(120%);
+    }
+    .lapinMenu{
+      width: 50px;
+      height: 50px;
+      margin-left: 100px;
+      background-color: rgb(300, 300, 300);
+      background: transparent;
+      background-size: cover;
+      background-image: url("https://previews.123rf.com/images/vectorstockcompany/vectorstockcompany1808/vectorstockcompany180817489/108634343-rabbit-vector-icon-isolated-on-transparent-background-rabbit-logo-concept.jpg");
+    }
+    .lapinMenus{
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .menuSecondaire{
+    background-color: lightblue;
+    height: 80px;
+    text-align: center;
+    padding-top: 30px;
+    border-radius: 10%;
+  }
+
+  .site {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "header"
+      "aside"
+      "main"
+      "footer";
+    // row-gap: 50px;
+    background-color: whitesmoke;
+    @media screen and (min-width: $largeur__bureau) {
+        grid-template-columns: 20% auto;
+        grid-template-areas:
+        "header header"
+        "aside main"
+       /*  ". main" */
+        "footer footer";
+    }
+  }
+  .no-aside {
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    @media screen and (min-width: $largeur__bureau) {
+      grid-template-columns: auto;
+      grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
+}

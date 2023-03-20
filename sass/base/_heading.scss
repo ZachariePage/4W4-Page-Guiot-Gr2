@@ -6,7 +6,8 @@ h1 {
     font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
   }
   h3 {
-    font-size: clamp(0.5625rem, -0.25rem + 2.6vw, 2.1875rem);
+    font-size: clamp(1rem, 0.0625rem + 3vw, 1.75rem);
+    font-family: 'Abril Fatface', cursive;
   }
   h4 {
     font-size: clamp(0.5rem, -0.1875rem + 2.2vw, 1.875rem);
@@ -35,7 +36,7 @@ h1 {
   h4,
   h5,
   h6 {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-family: 'Abril Fatface', cursive;
   }
   
   p {
@@ -46,13 +47,5 @@ h1 {
   /* front page */
 
   //header
-  .headerSite {
-    background-color: grey;
-    display: flex;
-    justify-content: space-evenly;
-    //padding-top: 20px;
-    //padding-left: 20px;
-  }
 
-  //main
 

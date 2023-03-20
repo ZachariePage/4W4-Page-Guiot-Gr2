@@ -1,5 +1,5 @@
 
-.sitefooter{
+.site__footer{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -8,7 +8,7 @@
     width: 100%;
 }
 
-.sitefooter section{
+.site__footer section{
     flex: 1 1 200px;
     height: 10vh;
     text-align: center;

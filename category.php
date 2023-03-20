@@ -1,28 +1,35 @@
-<?php 
+<?php
 /**
- * Modèle categorie par défaut
+ * Modèle category par défaut
  * 
  */
 ?>
 <?php get_header(); ?>
-<main>
-<h2 class="desc"><?php echo bloginfo('description') ?>-</h2>
-    <h3 class="first">category.php</h3>
-    <section class="blockflex">
-    <?php 
-        if(have_posts()) : 
-            while(have_posts()) : the_post(); ?>
-            <article>
-                <h1 class="post_title">
-                    <a href="<?php echo get_permalink();?>"><?php echo get_the_title(); ?></a>
-                </h1>
-                <p class="contentWp">
-                <?= wp_trim_words(get_the_excerpt(),10,"&#10148"); ?>           
-                </p>
-            </article>
-            <?php    endwhile;
-            endif;
-    ?>
-    </section>
+<main class="site__main">
+    <code>category.php</code>
+    <section class="blocflex">
+      <?php
+      $category = get_queried_object();
+      $args = array(
+         'category_name' => $category->slug,
+         'orderby' => 'title',
+         'order' => 'ASC'
+      );
+      $query = new WP_Query( $args );
+      if ( $query->have_posts() ) :
+         while ( $query->have_posts() ) : $query->the_post(); ?>
+         <?php 
+         $mon_template = "4w4";
+         if(in_category("cours")){
+            $mon_template = "cours";
+         }
+         get_template_part("template-parts/categorie", $mon_template ) ?>
+            
+         <?php endwhile; ?>
+      <?php endif;
+      wp_reset_postdata();?>
+   </section>
 </main>
+
+
 <?php get_footer(); ?>
