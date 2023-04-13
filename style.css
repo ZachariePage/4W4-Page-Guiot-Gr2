@@ -945,8 +945,16 @@ a:hover {
 }
 
 .erreurDiv a {
+  position: relative;
   color: blue;
   font-size: medium;
+}
+.erreurDiv a::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .image {
