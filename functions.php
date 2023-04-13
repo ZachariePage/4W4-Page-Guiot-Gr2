@@ -42,4 +42,15 @@ function cidweb_modifie_requete_principal( $query ) {
       $query->set( 'order', 'ASC' );
       }
      }
-     add_action( 'pre_get_posts', 'cidweb_modifie_requete_principal' );
+     add_action( 'pre_get_posts', 'cidweb_modifie_requete_error' );
+
+     function cidweb_modifie_requete_error( $query ) {
+        if ( $query->is_404() 
+            && $query->is_main_query() 
+            && ! is_admin() ) {
+          $query->set( 'category_name', '4w4' );
+          $query->set( 'orderby', 'title' );
+          $query->set( 'order', 'ASC' );
+          }
+         }
+         add_action( 'pre_get_posts', 'cidweb_modifie_requete_error' );

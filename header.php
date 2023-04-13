@@ -20,7 +20,7 @@
 */
 ?>
 <!-- body class="site  // $nouvelle_classe " -->
-<body class="site <?php echo (is_front_page()?'no-aside':'');?>">
+<body class="site <?php echo (is_front_page() || is_404()?'no-aside':'');?>">
 
    <header class="site__header">
     <section class="site__header__logo">
@@ -50,7 +50,7 @@
    </header>
 
     <?php 
-    if ( ! is_front_page()){
+    if ( ! is_front_page() && ! is_404()){
     get_template_part("template-parts/aside"); 
     }
     ?>
