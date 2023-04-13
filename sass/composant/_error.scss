@@ -1,0 +1,69 @@
+.erreur {
+    background-color: lightgrey;
+margin: auto;
+    text-align: center;
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.blanche{
+    background-color: white;
+}
+.erreurBlanche{
+    background-color: white;
+margin: auto;
+    text-align: center;
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.recherche__input{
+    opacity: 50%;
+}
+
+.titre{
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+    color: red;
+}
+.titre404{
+   padding-top: 50px;
+   color: red;
+    margin: auto;
+    text-align: center;
+    font-size: clamp(0.9375rem, -3.75rem + 15vw, 7.5rem);
+}
+.rechercheErreur{
+    padding-top: 50px;
+    margin: auto;
+    width: 50%;
+}
+.titreErreur{
+    text-align: center;
+    color: red;
+}
+.erreurDiv{
+    margin: auto;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center; 
+    color: blue;
+}
+.erreurDiv a{
+    color: blue;
+    font-size:medium;
+}
+
+.image{
+    background: transparent;
+    background-image: url("https://i.pinimg.com/474x/58/0f/5e/580f5eb62ff7e932047da0709dfb1af4--funny-rabbit-bunny-logo.jpg");
+}
+
+.titreText{
+    font-size:medium;
+}
