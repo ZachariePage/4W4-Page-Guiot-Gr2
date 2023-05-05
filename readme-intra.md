@@ -2,3 +2,4 @@
 ## Zacharie Page
 ### Examen intra modification d'un theme wordpress
 #### https://cidweb16.sg-host.com/
+https://cidweb16.sg-host.com/

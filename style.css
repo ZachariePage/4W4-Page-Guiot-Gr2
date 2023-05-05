@@ -617,6 +617,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  min-height: 100vh;
 }
 
 .blocflex__galerie {
@@ -964,4 +965,22 @@ a:hover {
 
 .titreText {
   font-size: medium;
+}
+
+.menu-evenement-container .menu {
+  display: flex;
+}
+.menu-evenement-container .menu .menu-item {
+  border: 1px solid #aaa;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu-evenement-container .menu .menu-item a {
+  font-size: 2rem;
+}
+.menu-evenement-container .menu .menu-item a span {
+  display: block;
+  font-size: 0.9rem;
 }/*# sourceMappingURL=style.css.map */

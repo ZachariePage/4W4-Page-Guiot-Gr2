@@ -1,16 +1,12 @@
 <footer class="site__footer">
-
-<section id="menuFooter">
-<?php 
-    wp_nav_menu(array(
-        "menu" => "menuFooter",
-        "container" => "nav"  
-    )); ?>
-</section>
-<section>Conception d'interface web</section>
-<section>Zacharie Page-Guiot</section>
-
+    <section><?php the_custom_logo(); ?></section>
+    <section>Colonne 2</section>
+    <section>
+        <div class="sidebar">
+            <?php dynamic_sidebar( 'footer_1' ); ?>
+        </div>
+    </section>
 </footer>
-<?php wp_footer();?>
+<?php wp_footer(); ?>
 </body>
 </html>

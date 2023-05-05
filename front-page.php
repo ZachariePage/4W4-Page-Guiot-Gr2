@@ -6,6 +6,17 @@
 ?>
 <?php get_header(); ?>
 <main>
+
+<section class="blocflex">
+    <?php 
+    wp_nav_menu(array(
+        "menu" => "evenement",
+        "container" => "nav"
+    ))
+    ?>
+
+</section>
+
 <h2 class="desc"><?php echo bloginfo('description') ?>-</h2>
 <h3 class="first">front page</h3>
     <section class="blocflex">
