@@ -7,7 +7,7 @@
                 if(has_post_thumbnail()){
                     the_post_thumbnail("thumbnail");
                 }
-                else{echo get_the_post_thumbnail(21,'thumbnail');}
+                else{echo get_the_post_thumbnail(40,'thumbnail');}
 
                  ?>
                 <p>
