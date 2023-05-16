@@ -1,10 +1,11 @@
 a{
-    color: #9eedf5;
+    color: white;
     &:visited{
-        color: rgb(198, 93, 255);
+        color: black;
     }
     &:hover {
-        color: rgb(9, 126, 147);
+        color: white;
+        text-shadow: 2px 2px black;
     }
 }
 

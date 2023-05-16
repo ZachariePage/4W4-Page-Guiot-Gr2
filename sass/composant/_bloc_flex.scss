@@ -35,3 +35,35 @@
     flex: 1 0 300px;
     margin: 2rem;
   }
+
+  .lapinSection{
+    color: black;
+  }
+
+  .separateurLapin{
+    background-color: rgb(148, 148, 255);
+    margin:0;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 80px;
+    box-sizing:border-box;
+    position: relative;
+    width: 100%;
+  }
+
+  .sectionLapin{
+    border: 1px solid red;
+    width: 90%;
+    display: flex;
+    height: 20%;
+    margin: auto;
+  }
+
+  #lapinSection{
+
+    min-height: auto;
+  }
+  .lapinPost{
+display: flex;
+flex-wrap: wrap;
+  }

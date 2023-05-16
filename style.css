@@ -379,12 +379,12 @@ p {
 
 /* front page */
 * {
-  max-width: 100vw;
   box-sizing: border-box;
 }
 
 html {
   height: 100%;
+  max-width: 100vw;
 }
 
 body {
@@ -424,7 +424,6 @@ body {
 }
 
 .separateur {
-  width: 100vw;
   background-color: rgb(148, 148, 255);
   margin: 0;
   margin-top: 100px;
@@ -434,7 +433,7 @@ body {
   padding-left: 80px;
   box-sizing: border-box;
   position: relative;
-  left: -40px;
+  width: 100%;
 }
 
 .single ul li {
@@ -452,7 +451,6 @@ body {
 }
 
 .first {
-  width: 100vw;
   background-color: rgb(148, 148, 255);
   margin: 0;
   padding-top: 80px;
@@ -512,14 +510,20 @@ body {
   max-width: 100vw;
 }
 
+.lapinDivFrontPage {
+  background-color: white;
+  margin: 0;
+}
+
 a {
-  color: #9eedf5;
+  color: white;
 }
 a:visited {
-  color: rgb(198, 93, 255);
+  color: black;
 }
 a:hover {
-  color: rgb(9, 126, 147);
+  color: white;
+  text-shadow: 2px 2px black;
 }
 
 /* -----
@@ -664,6 +668,38 @@ SVG Icons - svgicons.sparkk.fr
   margin: 2rem;
 }
 
+.lapinSection {
+  color: black;
+}
+
+.separateurLapin {
+  background-color: rgb(148, 148, 255);
+  margin: 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 80px;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+}
+
+.sectionLapin {
+  border: 1px solid red;
+  width: 90%;
+  display: flex;
+  height: 20%;
+  margin: auto;
+}
+
+#lapinSection {
+  min-height: auto;
+}
+
+.lapinPost {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .site__footer {
   display: flex;
   flex-direction: column;
@@ -675,7 +711,7 @@ SVG Icons - svgicons.sparkk.fr
   background-color: black;
   height: 150vh;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 855px) {
   .site__footer {
     flex-direction: row;
     height: 45vh;
@@ -776,6 +812,7 @@ SVG Icons - svgicons.sparkk.fr
   justify-content: flex-end;
   align-items: flex-end;
   flex-direction: column-reverse;
+  height: 100px;
   box-shadow: 0px 10px 13px -7px #000000, 2px 14px 8px 5px rgba(0, 0, 0, 0);
   justify-content: center;
 }
@@ -1099,4 +1136,8 @@ SVG Icons - svgicons.sparkk.fr
   width: 90%;
   margin: 20px;
   margin: auto;
+}
+
+.menu-lapin a {
+  color: black;
 }/*# sourceMappingURL=style.css.map */

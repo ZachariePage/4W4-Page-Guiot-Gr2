@@ -37,6 +37,19 @@
             endif;
             ?>
             
-    </section>
+        </section>
+        <section class="separateurLapin">Lapin</section>
+        <section class="blocflex" id="lapinSection">
+            <section class="sectionLapin">
+                <div class="lapinPost">
+                  <?php 
+                  wp_nav_menu(array(
+                      "menu" => "lapin",
+                      "container" => "nav"
+                  ));?>
+                </div>
+            </section>
+        </section>
+        
 </main>
 <?php get_footer(); ?>

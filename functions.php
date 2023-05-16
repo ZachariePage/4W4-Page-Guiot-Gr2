@@ -98,6 +98,8 @@ function cidweb_modifie_requete_principal( $query ) {
          }
          add_action( 'pre_get_posts', 'cidweb_modifie_requete_error' );
 
+
+
          /* -----------------------------------------Enregistrer le sidebar  ---*/
 
          /*function perso_menu_item_title($title, $item, $args) {
