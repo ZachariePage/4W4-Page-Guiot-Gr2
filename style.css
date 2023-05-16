@@ -516,13 +516,13 @@ body {
 }
 
 a {
-  color: white;
+  color: black;
 }
 a:visited {
   color: black;
 }
 a:hover {
-  color: white;
+  color: grey;
   text-shadow: 2px 2px black;
 }
 
@@ -684,7 +684,6 @@ SVG Icons - svgicons.sparkk.fr
 }
 
 .sectionLapin {
-  border: 1px solid red;
   width: 90%;
   display: flex;
   height: 20%;
@@ -1064,12 +1063,19 @@ SVG Icons - svgicons.sparkk.fr
   font-size: medium;
 }
 
+.menu-evenement-container,
+.menu-block-archive-container,
+.menu-lapin-container {
+  flex-wrap: wrap;
+}
 .menu-evenement-container .menu,
-.menu-block-archive-container .menu {
+.menu-block-archive-container .menu,
+.menu-lapin-container .menu {
   display: flex;
 }
 .menu-evenement-container .menu .menu-item,
-.menu-block-archive-container .menu .menu-item {
+.menu-block-archive-container .menu .menu-item,
+.menu-lapin-container .menu .menu-item {
   border: 1px solid #aaa;
   display: flex;
   flex-direction: column;
@@ -1077,9 +1083,11 @@ SVG Icons - svgicons.sparkk.fr
   background-color: rgba(0, 0, 255, 0.1);
   padding: 5px;
   margin: 10px;
+  flex-wrap: wrap;
 }
 .menu-evenement-container .menu .menu-item a,
-.menu-block-archive-container .menu .menu-item a {
+.menu-block-archive-container .menu .menu-item a,
+.menu-lapin-container .menu .menu-item a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1089,25 +1097,31 @@ SVG Icons - svgicons.sparkk.fr
   min-width: 300px;
   color: white;
   text-shadow: 3px 3px black;
+  flex-wrap: wrap;
 }
 .menu-evenement-container .menu .menu-item a span,
-.menu-block-archive-container .menu .menu-item a span {
+.menu-block-archive-container .menu .menu-item a span,
+.menu-lapin-container .menu .menu-item a span {
   display: block;
   font-size: 0.9rem;
   margin-bottom: 1rem;
   text-align: center;
+  flex-wrap: wrap;
 }
 .menu-evenement-container .menu .menu-item a .title,
-.menu-block-archive-container .menu .menu-item a .title {
+.menu-block-archive-container .menu .menu-item a .title,
+.menu-lapin-container .menu .menu-item a .title {
   display: block;
   font-size: 2rem;
 }
 .menu-evenement-container .menu .menu-item a .description,
-.menu-block-archive-container .menu .menu-item a .description {
+.menu-block-archive-container .menu .menu-item a .description,
+.menu-lapin-container .menu .menu-item a .description {
   font-size: 1rem;
 }
 .menu-evenement-container .menu .menu-item a .menu-thumbnail,
-.menu-block-archive-container .menu .menu-item a .menu-thumbnail {
+.menu-block-archive-container .menu .menu-item a .menu-thumbnail,
+.menu-lapin-container .menu .menu-item a .menu-thumbnail {
   display: block;
   width: 150px;
   height: 50px;
@@ -1127,6 +1141,12 @@ SVG Icons - svgicons.sparkk.fr
 .bloc__4w4 {
   background-image: url("https://s2.svgbox.net/flags-ld.svg?ic=rs");
   background-repeat: no-repeat;
+}
+
+#menu-evenement, #menu-block-archive {
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
 }
 
 #evenementSection {

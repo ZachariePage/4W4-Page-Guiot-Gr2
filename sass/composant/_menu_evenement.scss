@@ -1,5 +1,7 @@
 .menu-evenement-container,
-.menu-block-archive-container{ //nav
+.menu-block-archive-container,
+.menu-lapin-container{ //nav
+    flex-wrap: wrap;
     .menu {//
         display: flex;
         .menu-item{//li
@@ -10,6 +12,7 @@
             background-color: rgba($color: blue, $alpha: .1);
             padding: 5px;
             margin: 10px;
+            flex-wrap: wrap;
            
             a{
                 
@@ -22,12 +25,14 @@
                 min-width: 300px;
                 color: white;
                 text-shadow: 3px 3px black;
+                flex-wrap: wrap;
                 span{
                     
                     display: block;
                     font-size: 0.9rem;
                     margin-bottom: 1rem;
                     text-align: center;
+                    flex-wrap: wrap;
                     
                 }
                 .title{
@@ -58,6 +63,11 @@
 .bloc__4w4{
     background-image: url('https://s2.svgbox.net/flags-ld.svg?ic=rs');
     background-repeat: no-repeat;
+}
+#menu-evenement, #menu-block-archive{
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
 }
 
 #evenementSection{

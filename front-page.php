@@ -38,7 +38,7 @@
             ?>
             
         </section>
-        <section class="separateurLapin">Lapin</section>
+        <section class="separateurLapin"><h3>Article de Lapin</h3></section>
         <section class="blocflex" id="lapinSection">
             <section class="sectionLapin">
                 <div class="lapinPost">

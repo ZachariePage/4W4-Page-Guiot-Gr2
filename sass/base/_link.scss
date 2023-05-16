@@ -1,10 +1,10 @@
 a{
-    color: white;
+    color: black;
     &:visited{
         color: black;
     }
     &:hover {
-        color: white;
+        color: grey;
         text-shadow: 2px 2px black;
     }
 }
