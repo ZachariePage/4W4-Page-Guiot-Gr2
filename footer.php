@@ -20,7 +20,7 @@
         </div>
             <div>Mes contactes</div>
             <div>Telephone : 514 000 2222</div>
-            <div>Email : ZachariePageGuiot@cmaisonneuve.qc.ca</div>
+            <div>Email : ZachariePageGuiot@cmaisonneuve.com</div>
         
     </section>
     <section>
