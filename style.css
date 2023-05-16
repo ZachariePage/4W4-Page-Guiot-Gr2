@@ -1049,12 +1049,16 @@ SVG Icons - svgicons.sparkk.fr
   text-align: center;
   align-items: center;
   font-size: 2rem;
+  min-width: 300px;
+  color: white;
+  text-shadow: 3px 3px black;
 }
 .menu-evenement-container .menu .menu-item a span,
 .menu-block-archive-container .menu .menu-item a span {
   display: block;
   font-size: 0.9rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 .menu-evenement-container .menu .menu-item a .title,
 .menu-block-archive-container .menu .menu-item a .title {
@@ -1086,4 +1090,13 @@ SVG Icons - svgicons.sparkk.fr
 .bloc__4w4 {
   background-image: url("https://s2.svgbox.net/flags-ld.svg?ic=rs");
   background-repeat: no-repeat;
+}
+
+#evenementSection {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  width: 90%;
+  margin: 20px;
+  margin: auto;
 }/*# sourceMappingURL=style.css.map */

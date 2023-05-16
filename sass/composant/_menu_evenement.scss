@@ -1,6 +1,5 @@
 .menu-evenement-container,
 .menu-block-archive-container{ //nav
-    
     .menu {//
         display: flex;
         .menu-item{//li
@@ -11,17 +10,25 @@
             background-color: rgba($color: blue, $alpha: .1);
             padding: 5px;
             margin: 10px;
+           
             a{
+                
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 text-align: center;
                 align-items: center;
                 font-size: 2rem;
+                min-width: 300px;
+                color: white;
+                text-shadow: 3px 3px black;
                 span{
+                    
                     display: block;
                     font-size: 0.9rem;
                     margin-bottom: 1rem;
+                    text-align: center;
+                    
                 }
                 .title{
                     display: block;
@@ -53,3 +60,11 @@
     background-repeat: no-repeat;
 }
 
+#evenementSection{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    width: 90%;
+    margin: 20px;
+    margin: auto;
+}
