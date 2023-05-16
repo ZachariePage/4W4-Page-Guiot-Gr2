@@ -20,8 +20,7 @@
 */
 ?>
 <!-- body class="site  // $nouvelle_classe " -->
-<body class="site <?php echo (is_front_page() || is_404()?'no-aside':'');?>">
-
+<body class="custom-background site <?php echo (is_front_page() || is_404() || is_single() ?'no-aside':'');?>">
    <header class="site__header">
     <section class="site__header__logo">
       <div class="siteDivPremier">
@@ -50,7 +49,7 @@
    </header>
 
     <?php 
-    if ( ! is_front_page() && ! is_404()){
+    if ( ! is_front_page() && ! is_404() && ! is_single() ){
     get_template_part("template-parts/aside"); 
     }
     ?>

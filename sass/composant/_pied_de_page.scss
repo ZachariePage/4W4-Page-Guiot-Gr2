@@ -1,22 +1,37 @@
 
 .site__footer{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
     bottom: 0;
     top: 100%;
     width: 100%;
+    background-color: black;
+    height: 150vh;
+
+    @media screen and (min-width: 600px) {
+        flex-direction: row;
+        height: 45vh;
+    }
 }
 
 .site__footer section{
     flex: 1 1 200px;
     height: 10vh;
-    text-align: center;
+    margin-left: 50px;
     background-color: black;
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bolder;
     padding-top: 1em;
+    :first-child{
+        margin-bottom: 2em;
+    }
+    
+}
+#firstDivFooter:first-child{
+    height: 80px;
 }
 
 #menuFooter{

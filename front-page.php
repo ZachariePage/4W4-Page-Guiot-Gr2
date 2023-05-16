@@ -12,7 +12,11 @@
     wp_nav_menu(array(
         "menu" => "evenement",
         "container" => "nav"
-    ))
+    ));
+    wp_nav_menu(array(
+        "menu" => "block-archive",
+        "container" => "nav"
+    ));
     ?>
 
 </section>

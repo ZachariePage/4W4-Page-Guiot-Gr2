@@ -1,20 +1,55 @@
-.menu-evenement-container{ //nav
+.menu-evenement-container,
+.menu-block-archive-container{ //nav
+    
     .menu {//
         display: flex;
         .menu-item{//li
             border: 1px solid #aaa;
-            height: 50px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            background-color: rgba($color: blue, $alpha: .1);
+            padding: 5px;
+            margin: 10px;
             a{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                text-align: center;
+                align-items: center;
                 font-size: 2rem;
                 span{
                     display: block;
                     font-size: 0.9rem;
+                    margin-bottom: 1rem;
+                }
+                .title{
+                    display: block;
+                    font-size: 2rem;
+                }
+                .description{
+                    font-size: 1rem;
+                }
+                .menu-thumbnail{
+                    display: block;
+                    width: 150px;
+                    height: 50px;
                 }
             }
         }
     }
+}
+.menu-block-archive-container .menu .menu-item a{
+    background-repeat: no-repeat;
+    width: 50px;
+    display: block;
+}
+.bloc__cours a{
+    background-image: url('https://s2.svgbox.net/flags-ld.svg?ic=ba');
+    background-repeat: no-repeat;
+}
+.bloc__4w4{
+    background-image: url('https://s2.svgbox.net/flags-ld.svg?ic=rs');
+    background-repeat: no-repeat;
 }
 

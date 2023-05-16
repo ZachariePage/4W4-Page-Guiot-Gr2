@@ -396,6 +396,10 @@ body {
   min-height: 100%;
 }
 
+.site__main {
+  background-color: white;
+}
+
 .desc {
   width: 100%;
   background-color: rgb(0, 208, 255);
@@ -461,7 +465,6 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
-  margin: 2rem;
 }
 .blocflex__article {
   position: relative;
@@ -517,6 +520,25 @@ a:visited {
 }
 a:hover {
   color: rgb(9, 126, 147);
+}
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+.svg-icon {
+  width: 5em;
+  height: 5em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691f6;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
 }
 
 /**
@@ -618,36 +640,64 @@ a:hover {
   justify-content: space-between;
   flex-wrap: wrap;
   min-height: 100vh;
+  background-color: white;
+}
+
+.blocflex:first-of-type {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.blocflex__article img {
+  margin: auto;
+  display: flex;
 }
 
 .blocflex__galerie {
   flex: 1 0 100%;
+  margin: 2rem;
 }
 
 .blocflex__article {
   border: 1px solid #aaa;
   padding: 1rem;
   flex: 1 0 300px;
+  margin: 2rem;
 }
 
 .site__footer {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
   bottom: 0;
   top: 100%;
   width: 100%;
+  background-color: black;
+  height: 150vh;
+}
+@media screen and (min-width: 600px) {
+  .site__footer {
+    flex-direction: row;
+    height: 45vh;
+  }
 }
 
 .site__footer section {
   flex: 1 1 200px;
   height: 10vh;
-  text-align: center;
+  margin-left: 50px;
   background-color: black;
   color: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-weight: bolder;
   padding-top: 1em;
+}
+.site__footer section :first-child {
+  margin-bottom: 2em;
+}
+
+#firstDivFooter:first-child {
+  height: 80px;
 }
 
 #menuFooter ul {
@@ -861,13 +911,23 @@ a:hover {
 
 .titleSingle {
   margin-left: 20px;
-  margin-top: 20px;
+  margin-bottom: 0;
   font-family: "Abril Fatface", cursive;
 }
 .titleSingle::first-letter {
   color: purple;
 }
 
+.singleDiv {
+  padding-top: 20px;
+  margin-bottom: 0;
+  background-color: white;
+}
+
+.single {
+  margin-bottom: 0;
+  background-color: white;
+}
 .single h3 {
   margin-left: 10px;
 }
@@ -967,20 +1027,63 @@ a:hover {
   font-size: medium;
 }
 
-.menu-evenement-container .menu {
+.menu-evenement-container .menu,
+.menu-block-archive-container .menu {
   display: flex;
 }
-.menu-evenement-container .menu .menu-item {
+.menu-evenement-container .menu .menu-item,
+.menu-block-archive-container .menu .menu-item {
   border: 1px solid #aaa;
-  height: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: rgba(0, 0, 255, 0.1);
+  padding: 5px;
+  margin: 10px;
 }
-.menu-evenement-container .menu .menu-item a {
+.menu-evenement-container .menu .menu-item a,
+.menu-block-archive-container .menu .menu-item a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
   font-size: 2rem;
 }
-.menu-evenement-container .menu .menu-item a span {
+.menu-evenement-container .menu .menu-item a span,
+.menu-block-archive-container .menu .menu-item a span {
   display: block;
   font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.menu-evenement-container .menu .menu-item a .title,
+.menu-block-archive-container .menu .menu-item a .title {
+  display: block;
+  font-size: 2rem;
+}
+.menu-evenement-container .menu .menu-item a .description,
+.menu-block-archive-container .menu .menu-item a .description {
+  font-size: 1rem;
+}
+.menu-evenement-container .menu .menu-item a .menu-thumbnail,
+.menu-block-archive-container .menu .menu-item a .menu-thumbnail {
+  display: block;
+  width: 150px;
+  height: 50px;
+}
+
+.menu-block-archive-container .menu .menu-item a {
+  background-repeat: no-repeat;
+  width: 50px;
+  display: block;
+}
+
+.bloc__cours a {
+  background-image: url("https://s2.svgbox.net/flags-ld.svg?ic=ba");
+  background-repeat: no-repeat;
+}
+
+.bloc__4w4 {
+  background-image: url("https://s2.svgbox.net/flags-ld.svg?ic=rs");
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=style.css.map */

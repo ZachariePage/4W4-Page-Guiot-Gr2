@@ -3,6 +3,17 @@
      justify-content: space-between;
      flex-wrap: wrap;    
      min-height: 100vh;
+     background-color: white;
+ }
+ .blocflex:first-of-type{
+  background-color: rgba($color: white, $alpha: 0);
+ }
+ .blocflex__article img{
+  margin: auto;
+  display: flex;
+ }
+ .blocflex:first-of-type{
+
  }
 // .blocflex {
 //     display: grid;
@@ -16,9 +27,11 @@
 //   }
   .blocflex__galerie{
     flex:1 0 100%;
+    margin: 2rem;
   }
   .blocflex__article{
     border: 1px solid #aaa;
     padding: 1rem;
     flex: 1 0 300px;
+    margin: 2rem;
   }
