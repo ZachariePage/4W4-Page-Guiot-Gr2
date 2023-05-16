@@ -13,7 +13,6 @@ if ( have_posts() ) : the_post(); ?>
 <?php the_content();?>
 <a href="<?php the_field('url'); ?>"><?php the_field('url'); ?></a>
 <?php dynamic_sidebar($widget); ?>
-<p>La date et l'heure de l'événement<?php the_field('date_et_heure_de_levenement'); ?></p>     
 <?php endif;?>
 </main><!-- #main -->
 <?php
