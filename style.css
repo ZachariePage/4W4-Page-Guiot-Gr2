@@ -1189,7 +1189,9 @@ SVG Icons - svgicons.sparkk.fr
 #menu-menuexam {
   margin: auto;
   flex-wrap: wrap;
-  justify-content: center;
+}
+#menu-menuexam li {
+  max-width: 300px;
 }
 
 .menu-thumbnail {
@@ -1201,6 +1203,7 @@ SVG Icons - svgicons.sparkk.fr
   width: 90%;
   margin: auto;
   align-items: center;
+  flex-direction: row;
 }
 
 .menu-menuexam-container {
