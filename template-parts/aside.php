@@ -5,6 +5,9 @@
     if (in_category('cours')){
         $ma_categorie  = "cours";
     }
+    else if(is_page('')){
+        $ma_categorie = "menuExamAside";
+    }
     wp_nav_menu(array(
         "menu" => $ma_categorie,
         "container" => "nav"  
