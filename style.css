@@ -1065,17 +1065,20 @@ SVG Icons - svgicons.sparkk.fr
 
 .menu-evenement-container,
 .menu-block-archive-container,
-.menu-lapin-container {
+.menu-lapin-container,
+.menu-menuexam-container {
   flex-wrap: wrap;
 }
 .menu-evenement-container .menu,
 .menu-block-archive-container .menu,
-.menu-lapin-container .menu {
+.menu-lapin-container .menu,
+.menu-menuexam-container .menu {
   display: flex;
 }
 .menu-evenement-container .menu .menu-item,
 .menu-block-archive-container .menu .menu-item,
-.menu-lapin-container .menu .menu-item {
+.menu-lapin-container .menu .menu-item,
+.menu-menuexam-container .menu .menu-item {
   border: 1px solid #aaa;
   display: flex;
   flex-direction: column;
@@ -1087,7 +1090,8 @@ SVG Icons - svgicons.sparkk.fr
 }
 .menu-evenement-container .menu .menu-item a,
 .menu-block-archive-container .menu .menu-item a,
-.menu-lapin-container .menu .menu-item a {
+.menu-lapin-container .menu .menu-item a,
+.menu-menuexam-container .menu .menu-item a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1101,7 +1105,8 @@ SVG Icons - svgicons.sparkk.fr
 }
 .menu-evenement-container .menu .menu-item a span,
 .menu-block-archive-container .menu .menu-item a span,
-.menu-lapin-container .menu .menu-item a span {
+.menu-lapin-container .menu .menu-item a span,
+.menu-menuexam-container .menu .menu-item a span {
   display: block;
   font-size: 0.9rem;
   margin-bottom: 1rem;
@@ -1110,18 +1115,21 @@ SVG Icons - svgicons.sparkk.fr
 }
 .menu-evenement-container .menu .menu-item a .title,
 .menu-block-archive-container .menu .menu-item a .title,
-.menu-lapin-container .menu .menu-item a .title {
+.menu-lapin-container .menu .menu-item a .title,
+.menu-menuexam-container .menu .menu-item a .title {
   display: block;
   font-size: 2rem;
 }
 .menu-evenement-container .menu .menu-item a .description,
 .menu-block-archive-container .menu .menu-item a .description,
-.menu-lapin-container .menu .menu-item a .description {
+.menu-lapin-container .menu .menu-item a .description,
+.menu-menuexam-container .menu .menu-item a .description {
   font-size: 1rem;
 }
 .menu-evenement-container .menu .menu-item a .menu-thumbnail,
 .menu-block-archive-container .menu .menu-item a .menu-thumbnail,
-.menu-lapin-container .menu .menu-item a .menu-thumbnail {
+.menu-lapin-container .menu .menu-item a .menu-thumbnail,
+.menu-menuexam-container .menu .menu-item a .menu-thumbnail {
   display: block;
   width: 150px;
   height: 50px;
@@ -1161,8 +1169,26 @@ SVG Icons - svgicons.sparkk.fr
   width: 90%;
   margin: 20px;
   margin: auto;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .menu-lapin a {
   color: black;
+}
+
+#menu-menuexam {
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.examSection {
+  border: red 2px solid;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+}
+
+.menu-menuexam-container {
+  margin: auto;
 }/*# sourceMappingURL=style.css.map */

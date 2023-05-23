@@ -1,6 +1,7 @@
 .menu-evenement-container,
 .menu-block-archive-container,
-.menu-lapin-container{ //nav
+.menu-lapin-container,
+.menu-menuexam-container{ //nav
     flex-wrap: wrap;
     .menu {//
         display: flex;
@@ -81,6 +82,7 @@
     width: 90%;
     margin: 20px;
     margin: auto;
+    background-color:rgba($color: #fff, $alpha: 0)
 }
 
 .menu-lapin{

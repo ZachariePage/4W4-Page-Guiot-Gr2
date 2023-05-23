@@ -7,6 +7,14 @@
 <?php get_header(); ?>
 <main>
 
+<section class="examSection">
+    <?php 
+    wp_nav_menu(array(
+        "menu" => "menuExam",
+        "container" => "nav"
+    ));?>
+</section>
+
 <section id="evenementSection" class="blocflex">
     <?php 
     wp_nav_menu(array(

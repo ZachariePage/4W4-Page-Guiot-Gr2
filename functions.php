@@ -146,6 +146,15 @@ function cidweb_modifie_requete_principal( $query ) {
                 'before_title' => '<h2 class="widget-title">',
                 'after_title' => '</h2>',
             ) );
+            register_sidebar( array(
+                'name' => __( 'Footer 4', '4W4-Zacharie' ),
+                'id' => 'footer_4',
+                'description' => __( 'Une zone de widget pour afficher des widgets dans le pied de page.', '4W4-Zacharie' ),
+                'before_widget' => '<div id="%1$s" class="widget %2$s">',
+                'after_widget' => '</div>',
+                'before_title' => '<h2 class="widget-title">',
+                'after_title' => '</h2>',
+            ) );
         }
         add_action( 'widgets_init', 'enregistrer_sidebar' );
 
