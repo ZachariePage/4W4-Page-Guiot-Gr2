@@ -7,14 +7,35 @@
 <main class="site__main">
 
 <div class="blanc">
-<?php
-if ( have_posts() ) : the_post(); ?>
-<?php the_post_thumbnail("thumbnail") ?>
+<div><h3>Les atelier du TIM</h3></div>
 <h1><?= get_the_title(); ?></h1>
 <?php the_content();?>
-<p>L'adresse de l'evénement<?php the_field('adresse'); ?></p>
-<p>La date et l'heure de l'événement<?php the_field('date_et_heure_de_levenement'); ?></p>     
-<?php endif;?>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-6sky">Date</th>
+    <th class="tg-c0hy"><?php the_field('date'); ?></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-bnpj">Heure</td>
+    <td class="tg-c0hy"><?php the_field('heure'); ?></td>
+  </tr>
+  <tr>
+    <td class="tg-bnpj">Duree</td>
+    <td class="tg-c0hy"><?php the_field('duree'); ?></td>
+  </tr>
+  <tr>
+    <td class="tg-bnpj">Local</td>
+    <td class="tg-c0hy"><?php the_field('local'); ?></td>
+  </tr>
+  <tr>
+    <td class="tg-bnpj">Formateur</td>
+    <td class="tg-c0hy"><?php the_field('formatage'); ?></td>
+  </tr>
+</tbody>
+</table>
 </div>
 </main><!-- #main -->
 <?php

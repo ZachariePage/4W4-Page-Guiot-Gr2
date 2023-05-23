@@ -8,12 +8,13 @@
         $ma_categorie  = "cours";
     }
     else if(is_page('')){
-        ?><h3 class="menuSecondaire">Nos atelier</h3><?php
+        
         $ma_categorie = "menuExamAside";
         ?><div class="imgContainer">
             <?php
             the_post_thumbnail('thumbnail');?>
-        </div><?php
+        </div>
+        <h3 class="menuSecondaire">Nos atelier</h3><?php
         wp_nav_menu(array(
             "menu" => $ma_categorie,
             "container" => "nav"  

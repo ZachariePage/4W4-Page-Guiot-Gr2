@@ -3,9 +3,14 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+.menu-thumbnail{
+    justify-content: center;
+    margin: auto;
+}
+
+
 
 .examSection{
-    border: red 2px solid;
     width: 90%;
     margin: auto;
     align-items: center;
@@ -13,3 +18,11 @@
 .menu-menuexam-container{
     margin: auto;
 }
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:20px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:20px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-c0hy{background-color:#efefef;color:#27ff6f;text-align:left;vertical-align:top}
+.tg .tg-bnpj{background-color:#fffc9e;color:#000000;text-align:left;vertical-align:top}
+.tg .tg-6sky{background-color:#fffc9e;color:#000000;font-size:20px;text-align:left;vertical-align:top}
