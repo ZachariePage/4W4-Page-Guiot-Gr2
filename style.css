@@ -1199,6 +1199,11 @@ SVG Icons - svgicons.sparkk.fr
   margin: auto;
 }
 
+.blanc {
+  padding-left: 20px;
+  width: 90%;
+}
+
 .examSection {
   width: 90%;
   margin: auto;

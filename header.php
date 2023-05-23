@@ -33,6 +33,7 @@
       <h2 class="rotatingText-adjective"><?= bloginfo('name') ?></h2>
         </div>
       </div>
+      <div><a href="https://github.com/ZachariePage/4W4-Page-Guiot-Gr2">https://github.com/ZachariePage/4W4-Page-Guiot-Gr2</a></div>
       <div class="menu__recherche">
             <input type="checkbox" id="chkMenu">
             <?php wp_nav_menu(array(
