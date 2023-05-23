@@ -19,6 +19,16 @@
   }
   .site__aside {
     text-align: center;
+    .imgContainer{
+      display: flex;
+      justify-content: center;
+      img{
+        border:1px red solid;
+        margin: auto;
+        width: 70%;
+        justify-content: center;
+      }
+    }
     @media screen and (min-width: $largeur__bureau) {
       text-align: left;
   }

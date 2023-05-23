@@ -569,6 +569,16 @@ SVG Icons - svgicons.sparkk.fr
   grid-area: aside;
   background-color: lightblue;
 }
+.site__aside .imgContainer {
+  display: flex;
+  justify-content: center;
+}
+.site__aside .imgContainer img {
+  border: 1px red solid;
+  margin: auto;
+  width: 70%;
+  justify-content: center;
+}
 @media screen and (min-width: 1000px) {
   .site__aside {
     text-align: left;
